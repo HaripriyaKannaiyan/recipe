@@ -1,0 +1,131 @@
+/* App.css */
+
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('E:/recipe/fend/src/ff1.png'); /* Update with correct path */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Avoid tiling */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  color: white;
+  height: 100%; /* Ensure it covers the entire viewport height */
+  min-height: 100vh; /* Full viewport height even on smaller screens */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 20px;
+}
+
+/* Add your other styles here */
+.app-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for readability */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center text */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ff6347;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #ff7f50;
+}
+
+.add-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6347;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #ff7f50;
+  transform: scale(1.05);
+}
+
+.recipe-list {
+  margin-top: 30px;
+}
+
+.recipe-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease-in-out;
+}
+
+.recipe-card h3 {
+  font-size: 1.8rem;
+  color: rgb(111, 20, 20);
+  text-transform: capitalize;
+}
+
+.recipe-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-size: large;
+  color: wheat;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
